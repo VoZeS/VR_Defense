@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ChangeMode : MonoBehaviour
 {
-    public bool orda = false;
-    public bool build = true;
+    public static bool orda = false;
+    public static bool build = true;
+
   
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("Cambio Modo");
             build = !build;
             orda = !orda;
         }

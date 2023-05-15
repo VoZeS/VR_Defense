@@ -16,6 +16,7 @@ public class Enemies : MonoBehaviour
 
     private void Update()
     {
+
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -29,7 +30,7 @@ public class Enemies : MonoBehaviour
     {
         if(waypointIndex >= WayPoints.points.Length - 1)
         {
-            Destroy(gameObject);
+            EndPath();
             return;
         }
 
@@ -38,6 +39,12 @@ public class Enemies : MonoBehaviour
         target = WayPoints.points[waypointIndex];
     }
 
+    void EndPath()
+    {
+        PlayerStats.Lives--;
+        Debug.Log("-1 vida");
+        Destroy(gameObject);
+    }
 
 
 
