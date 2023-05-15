@@ -11,10 +11,10 @@ public class ChangeMode : MonoBehaviour
     void Update()
     {
 
-        //if (Input.GetKeyDown(KeyCode.P))
-        //{
-        //    build = false;
-        //    orda = true;
-        //}
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            build = !build;
+            orda = !orda;
+        }
     }
 }
