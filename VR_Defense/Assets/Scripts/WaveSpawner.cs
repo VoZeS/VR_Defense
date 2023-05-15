@@ -8,43 +8,45 @@ public class WaveSpawner : MonoBehaviour
 
     public Transform spawnPoint;
 
-    public float timeBetweenWaves = 2f;
+    public float timeBetweenWaves = 5f;
     private float countdown = 2f;
 
-    public int waveNumber = 1;
+    public int waveIndex = 0;
 
     void Update()
     {
         if (ChangeMode.orda)
         {
 
-        if ( countdown <= 0f)
-        {
-            SpawnWave();
-            countdown = timeBetweenWaves;
-        }
+            if ( countdown <= 0f)
+            {
+                StartCoroutine (SpawnWave());
+                countdown = timeBetweenWaves;
+            }
 
         countdown -= Time.deltaTime;
 
         }
     }
 
-    void SpawnWave()
+    IEnumerator SpawnWave()
     {
         //Debug.Log("Wave Incoming");
+        waveIndex++;
 
-       // for( int i = 0; i <waveNumber; i++) 
-        //{
-            SpawnEnemy();
-        //}
-
-        waveNumber++;
-
-
-        void SpawnEnemy()
+       for( int i = 0; i < waveIndex; i++) 
         {
-            Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+            
+                SpawnEnemy();
+                yield return new WaitForSeconds (0.5f);
+          
         }
+     
+    }
+
+    void SpawnEnemy()
+    {
+        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 
 }

@@ -7,6 +7,7 @@ public class ChangeMode : MonoBehaviour
     public static bool orda = false;
     public static bool build = true;
 
+ 
   
     // Update is called once per frame
     void Update()
@@ -14,8 +15,12 @@ public class ChangeMode : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Cambio Modo");
+           
+
             build = !build;
             orda = !orda;
         }
+
     }
+   
 }
