@@ -16,6 +16,8 @@ public class turret : MonoBehaviour
 
     public string enemyTag = "Enemy";
 
+    public GameObject bulletPrefab;
+    public Transform firePoint;
     
     // Start is called before the first frame update
     void Start()
@@ -66,7 +68,11 @@ public class turret : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("SHOOT");
+        GameObject bulletGO=(GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+
+        if (bullet != null)
+            bullet.Seek(target);
     }
 
     void OnDrawGizmosSelected()
