@@ -19,28 +19,26 @@ public class Node : MonoBehaviour
         starColor = rend.material.color;
 
     }
-
-    private void OnMouseDown()
+    public void CreateArrowTower()
     {
-        if(turret != null)
+        if (turret != null)
         {
             Debug.Log("No puedes construir aqui");
             return;
         }
 
-        GameObject turretToBuild = BuildManager.instance.getTurretToBuild();
+        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
         turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
         PlayerStats.Money -= 100;
-
     }
 
-    private void OnMouseEnter()
+    public void HoverEnter()
     {
         rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
     }
 
 
-    private void OnMouseExit()
+    public void HoverExit()
     {
         rend.material.color = starColor;
     }
