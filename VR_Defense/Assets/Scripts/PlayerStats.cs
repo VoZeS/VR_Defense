@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerStats : MonoBehaviour
 {
     public GameObject moneyUI;
+    public GameObject enemisUI;
 
     public static int Money;
     public int starMoney = 400;
@@ -23,6 +24,7 @@ public class PlayerStats : MonoBehaviour
     void Update()
     {
        moneyUI.GetComponent<TextMesh>().text = " " + Money.ToString();
+       enemisUI.GetComponent<TextMesh>().text = " " + WaveSpawner.enemyalive.ToString();
     }
 
 }

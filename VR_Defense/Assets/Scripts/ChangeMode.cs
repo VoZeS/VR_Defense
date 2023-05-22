@@ -4,23 +4,38 @@ using UnityEngine;
 
 public class ChangeMode : MonoBehaviour
 {
-    public static bool orda = false;
-    public static bool build = true;
+     public bool orda = false;
+    public bool build = true;
 
- 
+    public static bool buildMode = true;
   
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        
+        if(buildMode == true)
+        {
+            orda = false;
+            build = true;
+        }
+
+        if (buildMode == false)
+        {
+            orda = true;
+            build = false;
+        }
+
+
+
+        if (Input.GetKeyDown(KeyCode.Space) && WaveSpawner.enemyalive==0)
         {
             Debug.Log("Cambio Modo");
-           
 
-            build = !build;
-            orda = !orda;
+            buildMode = false;
+
         }
 
     }
+
    
 }

@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game Over");
 
-        ChangeMode.orda = false;
-        ChangeMode.build = true;
+        ChangeMode.buildMode = true;
     }
 }
