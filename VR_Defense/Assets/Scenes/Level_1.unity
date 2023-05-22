@@ -810,6 +810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowTorretPrefab: {fileID: 6825625099351083519, guid: ec2c6b9a6ace28945ae3bd6770a2beb6, type: 3}
+  missileLauncherPrefab: {fileID: 0}
 --- !u!1001 &151732953
 PrefabInstance:
   m_ObjectHideFlags: 0

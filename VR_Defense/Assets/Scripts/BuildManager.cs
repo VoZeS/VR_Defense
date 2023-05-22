@@ -19,6 +19,7 @@ public class BuildManager : MonoBehaviour
     //---------------------------------------------------------
 
     public GameObject arrowTorretPrefab;
+    public GameObject missileLauncherPrefab;
 
     private void Start()
     {
