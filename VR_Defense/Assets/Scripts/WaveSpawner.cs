@@ -13,9 +13,16 @@ public class WaveSpawner : MonoBehaviour
 
     public int waveIndex = 0;
 
+    public static int enemyalive = 0;
+
+    public static bool endWave = false;
+   
+
     void Update()
     {
-        if (ChangeMode.orda)
+
+ 
+        if (ChangeMode.buildMode == false && enemyalive==0)
         {
 
             if ( countdown <= 0f)
@@ -25,27 +32,37 @@ public class WaveSpawner : MonoBehaviour
             }
 
         countdown -= Time.deltaTime;
-
         }
+
+        
+
     }
 
     IEnumerator SpawnWave()
     {
         //Debug.Log("Wave Incoming");
         waveIndex++;
+       
 
        for( int i = 0; i < waveIndex; i++) 
         {
             
                 SpawnEnemy();
-                yield return new WaitForSeconds (0.5f);
-          
+
+            yield return new WaitForSeconds (0.5f);
+
+             SpawnEnemy();
+            yield return new WaitForSeconds(0.5f);
         }
+
+        ChangeMode.buildMode = true;
+        endWave = true;
      
     }
 
     void SpawnEnemy()
     {
+        enemyalive++;
         Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 
