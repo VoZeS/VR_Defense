@@ -18,7 +18,6 @@ public class Enemies : MonoBehaviour
 
     private void Update()
     {
-
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -48,7 +47,6 @@ public class Enemies : MonoBehaviour
         Destroy(gameObject);
         WaveSpawner.enemyalive--;
     }
-
 
 
 
