@@ -913,8 +913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb971067e612b849a2c94e390ab736d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowTorretPrefab: {fileID: 165880, guid: f4f6b630159e6b34386dec2579f250b2, type: 3}
-  bombLauncherPrefab: {fileID: 7707256492550002844, guid: eac743d8064bf8440adce4995dd46436, type: 3}
+  arrowTorretPrefab: {fileID: 6825625099351083519, guid: ec2c6b9a6ace28945ae3bd6770a2beb6, type: 3}
+  bombLauncherPrefab: {fileID: 3519841576669038454, guid: cb66d9bf37a39a1469efd46373f1455d, type: 3}
 --- !u!1001 &151732953
 PrefabInstance:
   m_ObjectHideFlags: 0

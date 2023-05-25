@@ -42,5 +42,7 @@ public class Bullet : MonoBehaviour
         Destroy(target.gameObject);
         Destroy(gameObject);
         WaveSpawner.enemyalive--;
+        PlayerStats.Money += 100;
     }
+
 }

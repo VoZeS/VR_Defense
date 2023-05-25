@@ -26,6 +26,21 @@ public class BuildManager : MonoBehaviour
         turretToBuild = arrowTorretPrefab;
     }
 
+    public void Update()
+    {
+        switch (Node.torretType)
+        {
+            case false: 
+                turretToBuild = arrowTorretPrefab;
+                break;
+
+            case true:
+                turretToBuild = bombLauncherPrefab;
+                break;
+
+        }
+    }
+
     private GameObject turretToBuild;
 
     public GameObject GetTurretToBuild()

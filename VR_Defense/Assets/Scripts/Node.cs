@@ -11,7 +11,7 @@ public class Node : MonoBehaviour
     private Renderer rend;
     private Color starColor;
 
-     bool torretas = true;
+    public static bool torretType = true;
 
     private void Start()
     {
@@ -31,7 +31,7 @@ public class Node : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
-           
+            torretType = !torretType;
         }
 
 
@@ -46,14 +46,14 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (torretas == false && PlayerStats.Money>=200)
+        if (torretType == false && PlayerStats.Money>=200) //Construye torreta de flechas
         {
             GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
             PlayerStats.Money -= 200;
         }
 
-        if (torretas == true && PlayerStats.Money >=400)
+        if (torretType == true && PlayerStats.Money >=400) //Construye torreta de bombas
         {
             GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
@@ -73,7 +73,7 @@ public class Node : MonoBehaviour
         rend.material.color = starColor;
     }
 
-    /*
+   
      
     public void HoverEnter()
     {
@@ -85,7 +85,7 @@ public class Node : MonoBehaviour
     {
         rend.material.color = starColor;
     }
-    */
+   
 
 
 }
