@@ -8,7 +8,7 @@ public class ChangeMode : MonoBehaviour
     public bool build = true;
 
     public static bool buildMode = true;
-  
+
     // Update is called once per frame
     void Update()
     {

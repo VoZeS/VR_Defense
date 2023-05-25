@@ -426,10 +426,23 @@ MonoBehaviour:
   button: {fileID: 22503023}
   onPress:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 147066745}
+        m_TargetAssemblyTypeName: ChangeMode, Assembly-CSharp
+        m_MethodName: BuildingMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onRealease:
     m_PersistentCalls:
       m_Calls: []
+  changeModeScript: {fileID: 147066745}
 --- !u!65 &22503033
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -842,6 +855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orda: 0
   build: 1
+  button: {fileID: 22503023}
 --- !u!4 &147066746
 Transform:
   m_ObjectHideFlags: 0
@@ -3969,6 +3983,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 719540398}
     m_Modifications:
+    - target: {fileID: 1604235120370612315, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CreateTower
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (2)
@@ -7114,10 +7132,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1305703788, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
-      propertyPath: m_Radius
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 1305703789, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -7126,10 +7140,6 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 421104035}
-    - target: {fileID: 1897891803, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
-      propertyPath: m_Radius
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 2327043256921480772, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -7152,19 +7162,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327043256921480772, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327043256921480772, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.98424673
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2327043256921480772, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.17680037
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327043256921480772, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 20.367
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327043256921480772, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -7177,10 +7187,6 @@ PrefabInstance:
     - target: {fileID: 2327043256921480775, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2327043256921480775, guid: 20407359d3b15c3458fec68dcdbf4bc6, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

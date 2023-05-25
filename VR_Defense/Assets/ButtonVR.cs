@@ -19,11 +19,21 @@ public class ButtonVR : MonoBehaviour
         isPressed = false;
     }
 
+    private void Update()
+    {
+        if(WaveSpawner.endOrd)
+        {
+            gameObject.transform.localPosition = new Vector3(1.304f, 1.44f, 0.647f);
+            isPressed = false;
+        }
+        else
+            gameObject.transform.localPosition = new Vector3(1.304f, 1.4f, 0.647f);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(!isPressed)
         {
-            gameObject.transform.localPosition = new Vector3(1.304f, 1.4f, 0.647f);
             onPress.Invoke();
             //sound.Play();
             isPressed = true;
