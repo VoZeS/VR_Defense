@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Enemies : MonoBehaviour
 {
@@ -44,6 +46,7 @@ public class Enemies : MonoBehaviour
         PlayerStats.Lives--;
         Debug.Log("-1 vida");
         Destroy(gameObject);
+        WaveSpawner.enemyalive--;
     }
 
 

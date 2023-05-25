@@ -11,6 +11,7 @@ public class Node : MonoBehaviour
     private Renderer rend;
     private Color starColor;
 
+     bool torretas = true;
 
     private void Start()
     {
@@ -19,7 +20,25 @@ public class Node : MonoBehaviour
         starColor = rend.material.color;
 
     }
-    public void CreateArrowTower()
+
+
+    public void OnMouseDown()
+    {
+        CreateTower();
+    }
+
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+           
+        }
+
+
+    }
+
+
+    public void CreateTower()
     {
         if (turret != null)
         {
@@ -27,11 +46,35 @@ public class Node : MonoBehaviour
             return;
         }
 
-        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-        PlayerStats.Money -= 100;
+        if (torretas == false && PlayerStats.Money>=200)
+        {
+            GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+            PlayerStats.Money -= 200;
+        }
+
+        if (torretas == true && PlayerStats.Money >=400)
+        {
+            GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+            PlayerStats.Money -= 400;
+        }
     }
 
+    
+
+
+    public void OnMouseEnter()
+    {
+        rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
+    }
+    public void OnMouseExit()
+    {
+        rend.material.color = starColor;
+    }
+
+    /*
+     
     public void HoverEnter()
     {
         rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
@@ -42,7 +85,7 @@ public class Node : MonoBehaviour
     {
         rend.material.color = starColor;
     }
-
+    */
 
 
 }
