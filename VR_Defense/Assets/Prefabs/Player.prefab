@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 110864741}
   - component: {fileID: 110864740}
   - component: {fileID: 110864744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHandRay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.005
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -367,8 +367,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -542,7 +551,7 @@ GameObject:
   - component: {fileID: 2137450934}
   - component: {fileID: 2137450933}
   - component: {fileID: 2137450937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHandRay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,7 +893,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.005
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -895,8 +904,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1406,7 +1424,7 @@ GameObject:
   - component: {fileID: 1305703789}
   - component: {fileID: 1305703788}
   - component: {fileID: 1305703790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftHandController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1641,7 +1659,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 1
-  m_AllowHoveredActivate: 0
+  m_AllowHoveredActivate: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -1683,7 +1701,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1305703790
 MonoBehaviour:
@@ -1706,8 +1724,8 @@ MonoBehaviour:
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 50cf7df0-2938-45ed-b64a-07c5f363abf0
-      m_Path: <XRController>{LeftHand}/thumbstickTouched
+      m_Id: 3f8df344-b7ee-45b4-8c08-853169a58d67
+      m_Path: <XRController>{LeftHand}/secondaryButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -1793,7 +1811,7 @@ GameObject:
   - component: {fileID: 1897891802}
   - component: {fileID: 1897891803}
   - component: {fileID: 1897891804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightHandController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2028,7 +2046,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 0
   m_HideControllerOnSelect: 1
-  m_AllowHoveredActivate: 0
+  m_AllowHoveredActivate: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2070,7 +2088,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1897891804
 MonoBehaviour:
@@ -2094,7 +2112,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: 50cf7df0-2938-45ed-b64a-07c5f363abf0
-      m_Path: <XRController>{RightHand}/thumbstickTouched
+      m_Path: <XRController>{RightHand}/secondaryButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 
