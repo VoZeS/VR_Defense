@@ -8,14 +8,13 @@ public class WaveSpawner : MonoBehaviour
 
     public Transform spawnPoint;
 
-    public float timeBetweenWaves = 5f;
+    public float timeBetweenWaves = 2f;
     private float countdown = 2f;
 
     public int waveIndex = 0;
 
     public static int enemyalive = 0;
 
-    public static bool endWave = false;
    
 
     void Update()
@@ -40,7 +39,7 @@ public class WaveSpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
-        //Debug.Log("Wave Incoming");
+        Debug.Log("Wave Incoming");
         waveIndex++;
        
 
@@ -56,7 +55,6 @@ public class WaveSpawner : MonoBehaviour
         }
 
         ChangeMode.buildMode = true;
-        endWave = true;
      
     }
 

@@ -44,6 +44,7 @@ public class Enemies : MonoBehaviour
         PlayerStats.Lives--;
         Debug.Log("-1 vida");
         Destroy(gameObject);
+        WaveSpawner.enemyalive--;
     }
 
 

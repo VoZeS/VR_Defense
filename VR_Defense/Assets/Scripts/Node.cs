@@ -32,6 +32,22 @@ public class Node : MonoBehaviour
         PlayerStats.Money -= 100;
     }
 
+    public void OnMouseDown()
+    {
+        CreateArrowTower();
+    }
+
+    public void OnMouseEnter()
+    {
+        rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
+    }
+    public void OnMouseExit()
+    {
+        rend.material.color = starColor;
+    }
+
+    /*
+     
     public void HoverEnter()
     {
         rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
@@ -42,7 +58,7 @@ public class Node : MonoBehaviour
     {
         rend.material.color = starColor;
     }
-
+    */
 
 
 }
