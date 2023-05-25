@@ -12,11 +12,11 @@ public class ChangeMode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && WaveSpawner.enemyalive == 0)
+        if (Input.GetKeyDown(KeyCode.Space) && WaveSpawner.endOrd==true)
         {
             Debug.Log("Cambio Modo");
 
-            buildMode = false;
+            BuildingMode();
 
         }
 
@@ -36,6 +36,11 @@ public class ChangeMode : MonoBehaviour
 
        
 
+    }
+
+    public void BuildingMode()
+    {
+        buildMode = false;
     }
 
    

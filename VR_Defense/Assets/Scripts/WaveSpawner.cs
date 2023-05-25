@@ -15,22 +15,22 @@ public class WaveSpawner : MonoBehaviour
 
     public static int enemyalive = 0;
 
+
+    public static  bool endOrd = true;
+
    
 
     void Update()
     {
-
- 
-        if (ChangeMode.buildMode == false && enemyalive==0)
+        if (enemyalive <= 0)
         {
-
-            if ( countdown <= 0f)
-            {
+            endOrd = true;
+        }
+ 
+        if (ChangeMode.buildMode == false && endOrd)
+        {
                 StartCoroutine (SpawnWave());
-                countdown = timeBetweenWaves;
-            }
-
-        countdown -= Time.deltaTime;
+            endOrd = false;
         }
 
         
