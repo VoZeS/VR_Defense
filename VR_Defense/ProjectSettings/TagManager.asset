@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Enemy
   - Arrow
-  - Floor
-  - Quiver
   layers:
   - Default
   - TransparentFX

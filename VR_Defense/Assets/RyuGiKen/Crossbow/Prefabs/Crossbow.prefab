@@ -83,6 +83,18 @@ MonoBehaviour:
           m_StringArgument: Fire
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1135404655}
+        m_TargetAssemblyTypeName: ArrowShoot, Assembly-CSharp
+        m_MethodName: SetArrowInPosition
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -98,21 +110,6 @@ MonoBehaviour:
           m_StringArgument: Fire
           m_BoolArgument: 0
         m_CallState: 2
-  m_SelectEntered:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1485033661919127732, guid: 9cf91ed6a1c1f3542abba4523b859489, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: set_tag
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Arrow
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1135404655}
         m_TargetAssemblyTypeName: ArrowShoot, Assembly-CSharp
         m_MethodName: SetArrowInPosition
@@ -123,23 +120,14 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  m_SelectExited:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1485033661919127732, guid: 9cf91ed6a1c1f3542abba4523b859489, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: set_tag
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Untagged
           m_BoolArgument: 0
         m_CallState: 2
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -841,9 +829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ff7bd1be49e5a4bac398ee6773b8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowTag: Arrow
   arrow: {fileID: 0}
-  speed: 20
+  speed: 10
 --- !u!1 &8432159859324568369
 GameObject:
   m_ObjectHideFlags: 0
