@@ -862,7 +862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147066744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.513033, y: 45.660007, z: 15.28}
+  m_LocalPosition: {x: 18.513033, y: -26.7, z: 15.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -881,7 +881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c33da6a2c5e9c7e49bdcbf6728b3a29e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 8159537848411085596, guid: e7b84f449461bba4db3f205dc903bfe7, type: 3}
+  enemyPrefab: {fileID: 3217135183004670060, guid: 16dd9ea8d057df342b782cad2ae2c57a, type: 3}
   spawnPoint: {fileID: 499560544}
   timeBetweenWaves: 5
   waveIndex: 0
@@ -925,8 +925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cb971067e612b849a2c94e390ab736d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowTorretPrefab: {fileID: 8304708423511769618, guid: ec2c6b9a6ace28945ae3bd6770a2beb6, type: 3}
-  bombLauncherPrefab: {fileID: 3519841576669038454, guid: cb66d9bf37a39a1469efd46373f1455d, type: 3}
+  arrowTorretPrefab: {fileID: 6243142882522584503, guid: 454231ca7c19e3e428ccf2fabf93dd11, type: 3}
+  bombLauncherPrefab: {fileID: 4751812494503511934, guid: 808e8918f473dd543ad07457cc4a931a, type: 3}
 --- !u!1001 &151732953
 PrefabInstance:
   m_ObjectHideFlags: 0

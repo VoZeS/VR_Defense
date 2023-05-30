@@ -12,12 +12,7 @@ public class Bullet : MonoBehaviour
         target = _target;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+  
     // Update is called once per frame
     void Update()
     {
@@ -39,10 +34,11 @@ public class Bullet : MonoBehaviour
 
     void HitTarget()
     {
-        Destroy(target.gameObject);
-        Destroy(gameObject);
         WaveSpawner.enemyalive--;
         PlayerStats.Money += 100;
+        Destroy(target.gameObject);
+        Destroy(gameObject);
+       
     }
 
 }

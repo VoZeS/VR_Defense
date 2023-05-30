@@ -31,7 +31,13 @@ public class Node : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.A))
         {
-            torretType = !torretType;
+            BuyArrowTower();
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            BuyBombTower();
         }
 
 
@@ -88,5 +94,13 @@ public class Node : MonoBehaviour
         rend.material.color = starColor;
     }
 
+    public void BuyArrowTower()
+    {
+        torretType = true;
+    }
 
+    public void BuyBombTower()
+    {
+        torretType = false;
+    }
 }

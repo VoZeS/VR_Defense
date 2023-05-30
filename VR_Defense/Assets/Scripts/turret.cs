@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class turret : MonoBehaviour
+public class Turret : MonoBehaviour
 {
 
     [Header("Attributes")]
