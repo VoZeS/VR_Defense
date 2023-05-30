@@ -2,11 +2,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Enemies : MonoBehaviour
+public class EnemiesPath : MonoBehaviour
 {
-
-    public float speed = 10f;
-
+    public EnemyStats enemyStats;
+    public float speed = 5f; 
     private Transform target;
 
     private int waypointIndex = 0;
@@ -42,10 +41,10 @@ public class Enemies : MonoBehaviour
 
     void EndPath()
     {
-        PlayerStats.Lives--;
-        Debug.Log("-1 vida");
-        Destroy(gameObject);
-        WaveSpawner.enemyalive--;
+
+       
+        enemyStats.EnemyWin();
+      
     }
 
 

@@ -71,8 +71,11 @@ public class Turret : MonoBehaviour
         GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        if (bullet != null)
+        if(bullet != null)
+        {
             bullet.Seek(target);
+
+        }
     }
 
     void OnDrawGizmosSelected()
