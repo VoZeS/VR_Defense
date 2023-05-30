@@ -12,9 +12,12 @@ public class Explosion_Player : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        
-      Explode();
-     
+        if(collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Enemy")
+        {
+            Explode();
+            BombSpawn.currentBombs--;
+        }
+
     }
 
     void Damage(Transform enemy)
