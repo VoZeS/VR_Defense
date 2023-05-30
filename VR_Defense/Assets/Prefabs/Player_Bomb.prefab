@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1869681099655321542}
   - component: {fileID: 1869681099655321543}
   - component: {fileID: 1869681099655321538}
-  - component: {fileID: 5458919746177440970}
+  - component: {fileID: -4310750369115057453}
   m_Layer: 0
   m_Name: Player_Bomb
   m_TagString: Untagged
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5458919746177440970
+--- !u!114 &-4310750369115057453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,10 +124,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1869681099655321544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35aa35d508f514341bd8794433a692c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6434565966f1dc74a9539e8f42890efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100
-  explosionRadius: 10
-  speed: 10
-  enemyStats: {fileID: 1076833808644527099, guid: 16dd9ea8d057df342b782cad2ae2c57a, type: 3}
+  explosionRadius: 1000
+  impactEffect: {fileID: 1982550563121423339, guid: d10c69b20269fa04c92d3d154fe00076, type: 3}

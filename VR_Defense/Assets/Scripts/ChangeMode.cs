@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ChangeMode : MonoBehaviour
 {
-     public bool orda = false;
+    public GameObject bomba;
+    public bool orda = false;
     public bool build = true;
 
     public static bool buildMode = true;
@@ -12,6 +13,7 @@ public class ChangeMode : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.Space) && WaveSpawner.endOrd==true)
         {
             Debug.Log("Cambio Modo");

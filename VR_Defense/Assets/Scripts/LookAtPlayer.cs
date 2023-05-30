@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class LookAtPlayer : MonoBehaviour
 {
-    public Transform cam;
+    public GameObject cam;
 
-    private void LateUpdate()
+    private void Start()
     {
-        transform.LookAt(cam);
+        cam = GameObject.FindGameObjectWithTag("MainCamera");
+    }
+    public void LateUpdate()
+    {
+        transform.LookAt(cam.transform);
     }
 }

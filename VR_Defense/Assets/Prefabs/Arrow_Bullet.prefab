@@ -97,5 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  explosionRadius: 0
   speed: 40
-  enemyStats: {fileID: 1076833808644527099, guid: 16dd9ea8d057df342b782cad2ae2c57a, type: 3}
+  enemyStats: {fileID: 7968980005855973522, guid: 16dd9ea8d057df342b782cad2ae2c57a, type: 3}
