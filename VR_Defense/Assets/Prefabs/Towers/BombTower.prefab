@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 4499014291453699582}
   - component: {fileID: 8444220529394448910}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: BombTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 15
+  range: 7
   fireRate: 1
   enemyTag: Enemy
   bulletPrefab: {fileID: 4777493609547225082, guid: 34842ce521c57004285e59089345fa01, type: 3}

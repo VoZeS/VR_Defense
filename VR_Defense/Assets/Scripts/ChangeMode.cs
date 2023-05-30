@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ChangeMode : MonoBehaviour
 {
-    public GameObject bomba;
     public bool orda = false;
     public bool build = true;
 

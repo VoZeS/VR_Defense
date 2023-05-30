@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class EnemyStats : MonoBehaviour
 {
 
-
+    public GameObject impactEffect;
     public float health = 100f;
 
     public Slider healthBar;
@@ -17,6 +17,8 @@ public class EnemyStats : MonoBehaviour
     }
     public void TakeDamage(float amount)
     {
+        GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(effectIns, 2f);
         health -= amount;
         
 
