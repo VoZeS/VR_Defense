@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -577,7 +581,7 @@ GameObject:
   - component: {fileID: 79459380}
   m_Layer: 0
   m_Name: Tile (53)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -674,7 +678,7 @@ GameObject:
   - component: {fileID: 110926702}
   m_Layer: 0
   m_Name: Tile (57)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -768,6 +772,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_Name
       value: Bush02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_RootOrder
@@ -1005,6 +1013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3646472407709166233, guid: c3c876f7c81e80142afa5e8ce6ae535f, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c876f7c81e80142afa5e8ce6ae535f, type: 3}
@@ -1121,6 +1133,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -1282,6 +1298,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3646472407709166233, guid: c3c876f7c81e80142afa5e8ce6ae535f, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c876f7c81e80142afa5e8ce6ae535f, type: 3}
@@ -1399,6 +1419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush04 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1473,7 +1497,7 @@ GameObject:
   - component: {fileID: 331489565}
   m_Layer: 0
   m_Name: Tile (4)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1568,6 +1592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1631,6 +1659,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -1698,7 +1730,7 @@ GameObject:
   - component: {fileID: 390712837}
   m_Layer: 0
   m_Name: Tile (51)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1890,6 +1922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: mountain (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 4703823074467580, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2036,6 +2072,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2099,6 +2139,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_Name
       value: Bush02 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_RootOrder
@@ -2271,7 +2315,7 @@ GameObject:
   - component: {fileID: 540800794}
   m_Layer: 0
   m_Name: Tile (43)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2433,6 +2477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2553,6 +2601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3646472407709166233, guid: c3c876f7c81e80142afa5e8ce6ae535f, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c876f7c81e80142afa5e8ce6ae535f, type: 3}
@@ -2640,6 +2692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2706,7 +2762,7 @@ GameObject:
   - component: {fileID: 578968910}
   m_Layer: 0
   m_Name: Tile (7)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2801,6 +2857,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gate
       objectReference: {fileID: 0}
+    - target: {fileID: 5326846857145513982, guid: d5f289838cbc2d34ab67cb4b5145d892, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 5326846857146002398, guid: d5f289838cbc2d34ab67cb4b5145d892, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -2879,7 +2939,7 @@ GameObject:
   - component: {fileID: 597325332}
   m_Layer: 0
   m_Name: Tile (3)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2974,6 +3034,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3037,6 +3101,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -3154,6 +3222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3218,6 +3290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3281,6 +3357,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_Name
       value: Tree04 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
@@ -3381,7 +3461,7 @@ GameObject:
   - component: {fileID: 656539342}
   m_Layer: 0
   m_Name: Tile (9)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3475,6 +3555,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_Name
       value: Tree05 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
@@ -3634,6 +3718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3700,7 +3788,7 @@ GameObject:
   - component: {fileID: 704126067}
   m_Layer: 0
   m_Name: Tile (46)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3795,6 +3883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -3870,6 +3962,10 @@ PrefabInstance:
     - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_Name
       value: mountain (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4703823074467580, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_RootOrder
@@ -3949,7 +4045,7 @@ GameObject:
   - component: {fileID: 718832122}
   m_Layer: 0
   m_Name: Tile (21)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4121,7 +4217,7 @@ GameObject:
   - component: {fileID: 737579090}
   m_Layer: 0
   m_Name: Tile (20)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4218,7 +4314,7 @@ GameObject:
   - component: {fileID: 739647923}
   m_Layer: 0
   m_Name: Tile (34)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4317,6 +4413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4380,6 +4480,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_Name
       value: Bush04
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
@@ -4459,7 +4563,7 @@ GameObject:
   - component: {fileID: 788280513}
   m_Layer: 0
   m_Name: Tile (52)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4613,6 +4717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4677,6 +4785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree05 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4740,6 +4852,10 @@ PrefabInstance:
     - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_Name
       value: Fence (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
@@ -4809,6 +4925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -4872,6 +4992,10 @@ PrefabInstance:
     - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_Name
       value: Fence (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
@@ -5085,6 +5209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5149,6 +5277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5212,6 +5344,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_Name
       value: Bush01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_RootOrder
@@ -5279,7 +5415,7 @@ GameObject:
   - component: {fileID: 1000790667}
   m_Layer: 0
   m_Name: Tile (33)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5476,7 +5612,7 @@ GameObject:
   - component: {fileID: 1003816658}
   m_Layer: 0
   m_Name: Tile (18)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5570,6 +5706,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_Name
       value: Bush02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_RootOrder
@@ -5746,6 +5886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence
       objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5810,6 +5954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5873,6 +6021,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
       propertyPath: m_Name
       value: Bush03 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
       propertyPath: m_RootOrder
@@ -5981,6 +6133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree05 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6045,6 +6201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6108,6 +6268,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_Name
       value: Bush04 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
@@ -6184,6 +6348,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_Name
       value: Tree05 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
@@ -6346,6 +6514,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6409,6 +6581,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_Name
       value: Tree04 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
@@ -6474,6 +6650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6537,6 +6717,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -6633,6 +6817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6696,6 +6884,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_Name
       value: Bush01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_RootOrder
@@ -6761,6 +6953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -6824,6 +7020,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_Name
       value: Bush02 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_RootOrder
@@ -6906,7 +7106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1248616249
 AudioListener:
   m_ObjectHideFlags: 0
@@ -6985,6 +7185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7048,6 +7252,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_Name
       value: Bush01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_RootOrder
@@ -7115,7 +7323,7 @@ GameObject:
   - component: {fileID: 1320236804}
   m_Layer: 0
   m_Name: Tile (38)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7210,6 +7418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7273,6 +7485,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_Name
       value: Tree05 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
@@ -7350,6 +7566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7413,6 +7633,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -7483,6 +7707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7549,7 +7777,7 @@ GameObject:
   - component: {fileID: 1397595644}
   m_Layer: 0
   m_Name: Tile (41)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7644,6 +7872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7707,6 +7939,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -7774,7 +8010,7 @@ GameObject:
   - component: {fileID: 1441564437}
   m_Layer: 0
   m_Name: Tile (17)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7869,6 +8105,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -7932,6 +8172,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -7999,7 +8243,7 @@ GameObject:
   - component: {fileID: 1487006807}
   m_Layer: 0
   m_Name: Tile (49)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8093,6 +8337,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_Name
       value: Bush01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_RootOrder
@@ -8189,6 +8437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush04 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8265,6 +8517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8331,7 +8587,7 @@ GameObject:
   - component: {fileID: 1604341676}
   m_Layer: 0
   m_Name: Tile (6)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8426,6 +8682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8489,6 +8749,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_Name
       value: Bush02
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a158e0d71b9d28a449578a6a542211cb, type: 3}
       propertyPath: m_RootOrder
@@ -8566,6 +8830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8632,7 +8900,7 @@ GameObject:
   - component: {fileID: 1691493818}
   m_Layer: 0
   m_Name: Tile (19)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8727,6 +8995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8790,6 +9062,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_Name
       value: Tree04
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
@@ -8857,7 +9133,7 @@ GameObject:
   - component: {fileID: 1712964712}
   m_Layer: 0
   m_Name: Tile (54)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8956,6 +9232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9019,6 +9299,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -9086,7 +9370,7 @@ GameObject:
   - component: {fileID: 1800930049}
   m_Layer: 0
   m_Name: Tile (35)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9181,6 +9465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9244,6 +9532,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -9343,6 +9635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6529751867234590500, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 6529751867234590503, guid: 635a513c88b64df4b8a5720f4dfcfded, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9407,6 +9703,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9470,6 +9770,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_Name
       value: Tree04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
@@ -9566,6 +9870,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush04 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9637,6 +9945,10 @@ PrefabInstance:
     - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_Name
       value: mountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4703823074467580, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_RootOrder
@@ -9797,6 +10109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -9863,7 +10179,7 @@ GameObject:
   - component: {fileID: 1906468216}
   m_Layer: 0
   m_Name: Tile (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9958,6 +10274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10021,6 +10341,10 @@ PrefabInstance:
     - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_Name
       value: mountain (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4703823074467580, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_RootOrder
@@ -10098,6 +10422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10161,6 +10489,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -10228,7 +10560,7 @@ GameObject:
   - component: {fileID: 1956408038}
   m_Layer: 0
   m_Name: Tile (30)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10323,6 +10655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10386,6 +10722,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -10548,6 +10888,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree05 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10611,6 +10955,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
       propertyPath: m_Name
       value: Bush03
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d0a555f42830f0b4ea42031195259d2a, type: 3}
       propertyPath: m_RootOrder
@@ -10690,7 +11038,7 @@ GameObject:
   - component: {fileID: 2011106574}
   m_Layer: 0
   m_Name: Tile (5)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10818,7 +11166,7 @@ GameObject:
   - component: {fileID: 2032455575}
   m_Layer: 0
   m_Name: Tile (22)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10913,6 +11261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c309f1fdc1ba06e4a849cdd8749eacef, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -10976,6 +11328,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_Name
       value: Tree05
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
@@ -11041,6 +11397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree04 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5b8d1200b09c3384bafaef83c5cfc6df, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11104,6 +11464,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_Name
       value: Bush04 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3acb8a3e5ab6ff4db49b7c35b6c1f10, type: 3}
       propertyPath: m_RootOrder
@@ -11176,6 +11540,10 @@ PrefabInstance:
     - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_Name
       value: mountain (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1739176662596396, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 4703823074467580, guid: 81f51ec42d5c7784aa8e8d5298eddaa0, type: 3}
       propertyPath: m_RootOrder
@@ -11258,6 +11626,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree05 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 600491ce39e51af4e88e958fad3f21d1, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11324,7 +11696,7 @@ GameObject:
   - component: {fileID: 2115678422}
   m_Layer: 0
   m_Name: Tile (2)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11418,6 +11790,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
@@ -11514,6 +11890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConstructionSite (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -11598,6 +11978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3558631295251565681, guid: dc924e3d758be5c4a9a5cb39d7bb95bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3558631295251565682, guid: dc924e3d758be5c4a9a5cb39d7bb95bc, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -11657,6 +12041,22 @@ PrefabInstance:
       propertyPath: quiver
       value: 
       objectReference: {fileID: 2079025207}
+    - target: {fileID: 1604235120370612312, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: noBuildColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612312, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: noBuildColor.b
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612312, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: noBuildColor.g
+      value: 0.8235295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612312, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: noBuildColor.r
+      value: 0.45882356
+      objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612315, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -11664,6 +12064,10 @@ PrefabInstance:
     - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_Name
       value: ConstructionSite
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604235120370612318, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
+      propertyPath: m_TagString
+      value: Floor
       objectReference: {fileID: 0}
     - target: {fileID: 1604235120370612319, guid: 4d792b6e385336c4d960eb8866b31011, type: 3}
       propertyPath: m_RootOrder

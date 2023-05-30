@@ -4,6 +4,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
+    public Color noBuildColor;
     public Vector3 positionOffset;
 
     private GameObject turret;
@@ -48,6 +49,16 @@ public class Node : MonoBehaviour
             BuyBombTower();
         }
 
+        if (ChangeMode.buildMode == false)
+        {
+            noBuildMode();
+        }
+
+        if (WaveSpawner.enemyalive <= 0)
+        {
+          
+            HoverExit();
+        }
 
     }
 
@@ -60,21 +71,25 @@ public class Node : MonoBehaviour
             return;
         }
 
-        if (torretType == false && PlayerStats.Money>=200) //Construye torreta de flechas
+        if (WaveSpawner.enemyalive<=0)
         {
-            GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-            PlayerStats.Money -= 200;
-        }
+            if (torretType == false && PlayerStats.Money >= 200) //Construye torreta de flechas
+            {
+                GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+                turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+                PlayerStats.Money -= 200;
+            }
 
-        if (torretType == true && PlayerStats.Money >=400) //Construye torreta de bombas
-        {
-            GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-            Instantiate(crossbow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
-            quiver.transform.position = transform.position + positionOffset + new Vector3(0, 5, 0);
-            PlayerStats.Money -= 400;
+            if (torretType == true && PlayerStats.Money >= 400) //Construye torreta de bombas
+            {
+                GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+                turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+                Instantiate(crossbow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
+                quiver.transform.position = transform.position + positionOffset + new Vector3(0, 5, 0);
+                PlayerStats.Money -= 400;
+            }
         }
+       
     }
 
     
@@ -90,7 +105,11 @@ public class Node : MonoBehaviour
     //    rend.material.color = starColor;
     //}
 
-   
+   public void noBuildMode()
+    {
+        rend.material.color = noBuildColor;
+     
+    }
      
 
     public void HoverEnter()
@@ -101,7 +120,9 @@ public class Node : MonoBehaviour
 
     public void HoverExit()
     {
+      
         rend.material.color = starColor;
+        
     }
 
     public void BuyArrowTower()

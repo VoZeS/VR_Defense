@@ -13,11 +13,12 @@ public class ChangeMode : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space) && WaveSpawner.endOrd==true)
+        if (Input.GetKeyDown(KeyCode.Space) && WaveSpawner.endOrd == true)
         {
             Debug.Log("Cambio Modo");
 
             BuildingMode();
+
 
         }
 
