@@ -1,59 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ArrowShoot : MonoBehaviour
 {
-    private Transform target;
-    public GameObject arrow;
+    public string arrowTag = "Arrow";
 
-    public float speed = 10f;
+    public XRSocketInteractor socket;
+
     private bool arrowInPosition = false;
-    private bool arrowShooted = false;
+    public static bool arrowShooted = false;
 
-    public void Seek(Transform _target)
-    {
-        target = _target;
-    }
+    public float timer = 0.0f;
 
     public void SetArrowInPosition(System.Boolean active)
     {
         arrowInPosition = active;
     }
 
-    void Update()
+    private void Update()
     {
+        timer += Time.deltaTime;
 
-        if(arrowShooted)
-        {
-            Vector3 dir = arrow.transform.forward;
-            float distanceThisFrame = speed * Time.deltaTime;
+        Debug.Log(timer);
 
-            if (dir.magnitude <= distanceThisFrame)
-            {
-                HitTarget();
-                return;
-            }
-            arrow.transform.Translate(dir.normalized * distanceThisFrame, Space.World);
-        }
-       
+        if (timer >= 2.0f)
+            socket.socketActive = true;
+
     }
-
     public void ShootArrow()
     {
-        if(arrowInPosition)
-        {
-            arrowShooted = true;
-            arrowInPosition = false;
-        }
-    }
-
-    void HitTarget()
-    {
-        WaveSpawner.enemyalive--;
-        PlayerStats.Money += 100;
-        Destroy(target.gameObject);
-        Destroy(arrow);
-        arrowShooted = false;
+        arrowShooted = true;
+        socket.socketActive = false;
+        timer = 0.0f;
     }
 }

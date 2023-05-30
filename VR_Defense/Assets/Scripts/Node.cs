@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Node : MonoBehaviour
 {
@@ -13,12 +14,19 @@ public class Node : MonoBehaviour
 
     public static bool torretType = true;
 
+    public GameObject crossbow;
+    public GameObject quiver;
+    //public GameObject arrow;
+    //private XRGrabInteractable grabIntArrow;
+
+
     private void Start()
     {
 
         rend = GetComponent<Renderer>();
         starColor = rend.material.color;
 
+        //grabIntArrow = arrow.GetComponent<XRGrabInteractable>();
     }
 
 
@@ -63,6 +71,8 @@ public class Node : MonoBehaviour
         {
             GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
             turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+            Instantiate(crossbow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
+            quiver.transform.position = transform.position + positionOffset + new Vector3(0, 5, 0);
             PlayerStats.Money -= 400;
         }
     }
