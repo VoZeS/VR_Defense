@@ -64,7 +64,7 @@ public class Node : MonoBehaviour
     
 
 
-<<<<<<< Updated upstream
+
     public void OnMouseEnter()
     {
         rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
@@ -76,18 +76,7 @@ public class Node : MonoBehaviour
 
    
      
-=======
-    //public void OnMouseEnter()
-    //{
-    //    rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
-    //}
-    //public void OnMouseExit()
-    //{
-    //    rend.material.color = starColor;
-    //}
 
-  
->>>>>>> Stashed changes
     public void HoverEnter()
     {
         rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
@@ -98,10 +87,6 @@ public class Node : MonoBehaviour
     {
         rend.material.color = starColor;
     }
-   
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 
 }
