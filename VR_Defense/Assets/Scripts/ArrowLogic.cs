@@ -5,28 +5,59 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ArrowLogic : MonoBehaviour
 {
-
     float maxStrenght = 0.2f;
+
+    public bool isReady = false;
+    public static bool arrowShooted = false;
+
+    private Rigidbody rb;
+    private void Start()
+    {
+        arrowShooted = false;
+        isReady = false;
+
+        rb = GetComponent<Rigidbody>();
+
+    }
 
     private void Update()
     {
         if (gameObject.transform.position.y < -5)
             Destroy(gameObject);
 
-        if (ArrowShoot.arrowShooted && gameObject.layer == 8)
+        if (arrowShooted && isReady)
         {
-            Rigidbody rb = gameObject.GetComponent<Rigidbody>();
-            rb.AddForce(gameObject.transform.forward * maxStrenght, ForceMode.Impulse);
+            Debug.Log("SHOOOT!");
+
+            rb.AddForce(transform.forward * maxStrenght, ForceMode.Impulse);
 
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        //if(collision.gameObject.tag == "Floor")
+        //arrowShooted = false;
+
+        if(collision.gameObject.tag == "Floor")
         {
-            ArrowShoot.arrowShooted = false;
+            Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Crossbow")
+        {
+            isReady = true;
+        }
+
 
     }
 
+    private void OnCollisionExit(Collision collision)
+    {
+       
+        if (collision.gameObject.tag == "Crossbow")
+        {
+            isReady = false;
+        }
+
+
+    }
 }

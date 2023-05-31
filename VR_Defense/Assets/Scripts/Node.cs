@@ -16,7 +16,7 @@ public class Node : MonoBehaviour
     public static bool torretType = true;
 
     public GameObject crossbow;
-    public GameObject quiver;
+    public GameObject arrow;
     //public GameObject arrow;
     //private XRGrabInteractable grabIntArrow;
 
@@ -77,6 +77,8 @@ public class Node : MonoBehaviour
             {
                 GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+                Instantiate(crossbow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
+                Instantiate(arrow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
                 PlayerStats.Money -= 200;
             }
 
@@ -84,8 +86,6 @@ public class Node : MonoBehaviour
             {
                 GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-                Instantiate(crossbow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
-                quiver.transform.position = transform.position + positionOffset + new Vector3(0, 5, 0);
                 PlayerStats.Money -= 400;
             }
         }

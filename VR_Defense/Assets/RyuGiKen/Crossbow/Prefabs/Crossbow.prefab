@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 470736437}
   - component: {fileID: 470736439}
   - component: {fileID: 470736438}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: SocketArrow
-  m_TagString: Untagged
+  m_TagString: Crossbow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,18 +83,6 @@ MonoBehaviour:
           m_StringArgument: Fire
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135404655}
-        m_TargetAssemblyTypeName: ArrowShoot, Assembly-CSharp
-        m_MethodName: SetArrowInPosition
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -108,18 +96,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Fire
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1135404655}
-        m_TargetAssemblyTypeName: ArrowShoot, Assembly-CSharp
-        m_MethodName: SetArrowInPosition
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   m_SelectEntered:
@@ -143,7 +119,7 @@ MonoBehaviour:
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 0}
   m_InteractableCantHoverMeshMaterial: {fileID: 0}
-  m_SocketActive: 1
+  m_SocketActive: 0
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 0.5
 --- !u!1 &683951780
@@ -155,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 683951781}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: Attatch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +162,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1525541150}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: AttatchCrossbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,9 +467,9 @@ GameObject:
   - component: {fileID: 1750670347}
   - component: {fileID: 1750670351}
   - component: {fileID: 1135404655}
-  m_Layer: 31
+  m_Layer: 0
   m_Name: Crossbow
-  m_TagString: Untagged
+  m_TagString: Crossbow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -517,7 +493,7 @@ Transform:
   - {fileID: 470736437}
   - {fileID: 1525541150}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3240984551978857752
 Animator:
@@ -657,7 +633,7 @@ Rigidbody:
   m_GameObject: {fileID: 8370802328558119537}
   serializedVersion: 2
   m_Mass: 50
-  m_Drag: 0
+  m_Drag: 1
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -682,7 +658,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967294
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:

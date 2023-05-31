@@ -229,4 +229,4 @@ MonoBehaviour:
   noBuildColor: {r: 0.47058827, g: 0.8352942, b: 0.5411765, a: 1}
   positionOffset: {x: 0, y: 0, z: 0}
   crossbow: {fileID: 8370802328558119537, guid: 4a36f3a1e6f34494f8059f8dd3df1777, type: 3}
-  quiver: {fileID: 100000, guid: 3bf4320244258c0448bc784dfe221cc5, type: 3}
+  arrow: {fileID: 1485033661919127732, guid: 9cf91ed6a1c1f3542abba4523b859489, type: 3}

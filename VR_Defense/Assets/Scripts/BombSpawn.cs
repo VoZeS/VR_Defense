@@ -12,7 +12,7 @@ public class BombSpawn : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(bomb && currentBombs < maxBombs)
+        if(/*other.gameObject.tag == "Bomb"*/ bomb && currentBombs < maxBombs)
         {
             Instantiate(bomb, spawn.transform.position, spawn.transform.rotation);
             currentBombs++;
