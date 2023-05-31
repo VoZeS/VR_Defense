@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Arrow
+  - Floor
+  - Crossbow
+  - Bomb
   layers:
   - Default
   - TransparentFX
@@ -16,8 +19,8 @@ TagManager:
   - Hands
   - Interactive
   - Arrow
-  - 
-  - 
+  - ToyTowerBomb
+  - ToyTowerArrow
   - 
   - 
   - 

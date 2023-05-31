@@ -23,11 +23,11 @@ public class ButtonVR : MonoBehaviour
     {
         if(WaveSpawner.endOrd)
         {
-            gameObject.transform.localPosition = new Vector3(1.304f, 1.44f, 0.647f);
+            gameObject.transform.localPosition = new Vector3(1.11f, 1.43f, 0.42f);
             isPressed = false;
         }
         else
-            gameObject.transform.localPosition = new Vector3(1.304f, 1.4f, 0.647f);
+            gameObject.transform.localPosition = new Vector3(1.11f, 1.4f, 0.42f);
     }
 
     private void OnTriggerEnter(Collider other)

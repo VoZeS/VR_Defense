@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 470736437}
   - component: {fileID: 470736439}
   - component: {fileID: 470736438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SocketArrow
   m_TagString: Crossbow
   m_Icon: {fileID: 0}
@@ -45,8 +45,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.14740753, y: 0.066272736, z: 0.79408264}
-  m_Center: {x: -0.01719284, y: 0.17319298, z: 0.46406555}
+  m_Size: {x: 0.105033845, y: 0.066272736, z: 0.79408264}
+  m_Center: {x: 0.003994005, y: 0.17319298, z: 0.46406555}
 --- !u!114 &470736438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 2
   m_AttachTransform: {fileID: 683951781}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -146,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683951780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1774, z: 0.474}
+  m_LocalPosition: {x: 0, y: 0.1774, z: 0.266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -463,10 +463,10 @@ GameObject:
   - component: {fileID: 4787407247547226210}
   - component: {fileID: 3240984551978857752}
   - component: {fileID: 8296172669276728082}
-  - component: {fileID: 1074587007457325132}
   - component: {fileID: 1750670347}
   - component: {fileID: 1750670351}
   - component: {fileID: 1135404655}
+  - component: {fileID: 5060008640333396453}
   m_Layer: 0
   m_Name: Crossbow
   m_TagString: Crossbow
@@ -493,7 +493,7 @@ Transform:
   - {fileID: 470736437}
   - {fileID: 1525541150}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3240984551978857752
 Animator:
@@ -611,19 +611,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &1074587007457325132
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8370802328558119537}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.08, y: 0.15, z: 1.6}
-  m_Center: {x: 0, y: 0.07, z: 0.32999998}
 --- !u!54 &1750670347
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -658,7 +645,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967294
+    m_Bits: 4294967295
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -779,9 +766,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08ff7bd1be49e5a4bac398ee6773b8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowTag: Arrow
   socket: {fileID: 470736438}
   timer: 0
+--- !u!65 &5060008640333396453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8370802328558119537}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25007766, y: 0.24046528, z: 1.6578119}
+  m_Center: {x: 0.00504449, y: 0.005865544, z: 0.32890403}
 --- !u!1 &8432159859324568369
 GameObject:
   m_ObjectHideFlags: 0

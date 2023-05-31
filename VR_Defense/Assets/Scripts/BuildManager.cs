@@ -6,6 +6,8 @@ public class BuildManager : MonoBehaviour
     //-------------------------------------- Sistema de seguridad para que no tengamos mas de un build Manager
     public static BuildManager instance;
 
+    public Node nodeScript;
+
     private void Awake()
     {
         if (instance != null)
@@ -18,24 +20,35 @@ public class BuildManager : MonoBehaviour
     }
     //---------------------------------------------------------
 
-    public GameObject arrowTorretPrefab;
-    public GameObject bombLauncherPrefab;
+    public GameObject bombTorretPrefab;
+    public GameObject arrowLauncherPrefab;
 
     private void Start()
     {
-        turretToBuild = arrowTorretPrefab;
+        turretToBuild = bombTorretPrefab;
     }
 
     public void Update()
     {
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    BuyArrowTower();
+
+        //}
+
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    BuyBombTower();
+        //}
+
         switch (Node.torretType)
         {
             case false: 
-                turretToBuild = arrowTorretPrefab;
+                turretToBuild = bombTorretPrefab;
                 break;
 
             case true:
-                turretToBuild = bombLauncherPrefab;
+                turretToBuild = arrowLauncherPrefab;
                 break;
 
         }
@@ -46,5 +59,20 @@ public class BuildManager : MonoBehaviour
     public GameObject GetTurretToBuild()
     {
         return turretToBuild;
+    }
+
+    public void BuyArrowTower()
+    {
+        Node.torretType = true;
+    }
+
+    public void BuyBombTower()
+    {
+        Node.torretType = false;
+    }
+
+    public void BuildTower()
+    {
+        nodeScript.CreateTower();
     }
 }

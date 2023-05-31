@@ -15,12 +15,6 @@ public class Node : MonoBehaviour
 
     public static bool torretType = true;
 
-    public GameObject crossbow;
-    public GameObject arrow;
-    //public GameObject arrow;
-    //private XRGrabInteractable grabIntArrow;
-
-
     private void Start()
     {
 
@@ -28,6 +22,7 @@ public class Node : MonoBehaviour
         starColor = rend.material.color;
 
         //grabIntArrow = arrow.GetComponent<XRGrabInteractable>();
+
     }
 
 
@@ -38,16 +33,7 @@ public class Node : MonoBehaviour
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            BuyArrowTower();
-            
-        }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            BuyBombTower();
-        }
 
         if (ChangeMode.buildMode == false)
         {
@@ -61,7 +47,6 @@ public class Node : MonoBehaviour
         }
 
     }
-
 
     public void CreateTower()
     {
@@ -77,8 +62,6 @@ public class Node : MonoBehaviour
             {
                 GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-                Instantiate(crossbow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
-                Instantiate(arrow, transform.position + positionOffset + new Vector3(0, 5, 0), crossbow.transform.rotation);
                 PlayerStats.Money -= 200;
             }
 
@@ -91,9 +74,6 @@ public class Node : MonoBehaviour
         }
        
     }
-
-    
-
 
 
     //public void OnMouseEnter()
@@ -123,15 +103,5 @@ public class Node : MonoBehaviour
       
         rend.material.color = starColor;
         
-    }
-
-    public void BuyArrowTower()
-    {
-        torretType = true;
-    }
-
-    public void BuyBombTower()
-    {
-        torretType = false;
     }
 }
