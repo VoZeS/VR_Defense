@@ -8,19 +8,31 @@ public class ToyGrab : MonoBehaviour
     public XRDirectInteractor rHand;
     public XRDirectInteractor lHand;
 
+    public XRRayInteractor rayRightHand;
+    public XRRayInteractor rayLeftHand;
+
     public IXRSelectInteractable toyBombTower;
     public IXRSelectInteractable toyArrowTower;
 
     public ToggleRay rightRayScript;
     public ToggleRay leftRayScript;
+
     public XRInteractorLineVisual rightLineVisual;
     public XRInteractorLineVisual leftLineVisual;
+
+    private bool toggleRayLeft = false;
+    private bool toggleRayRight = false;
 
     // Start is called before the first frame update
     void Start()
     {
         toyBombTower = GameObject.FindGameObjectWithTag("ToyBombTower").GetComponent<XRGrabInteractable>();
         toyArrowTower = GameObject.FindGameObjectWithTag("ToyArrowTower").GetComponent<XRGrabInteractable>();
+
+
+
+        toggleRayLeft = false;
+        toggleRayRight = false;
     }
 
     void Update()
@@ -39,12 +51,19 @@ public class ToyGrab : MonoBehaviour
 
             }
 
-            rightRayScript.directInteractor = rHand;
+            //rightRayScript.directInteractor = rHand;
+            rayRightHand.interactionLayers = InteractionLayerMask.GetMask("Node");
             rightRayScript.ActivateRay();
+            toggleRayRight = true;
 
         }
-        else if (!rHand.isSelectActive)
+        else if (!rHand.isSelectActive && toggleRayRight)
+        {
             rightRayScript.DeactivateRay();
+            rayRightHand.interactionLayers = InteractionLayerMask.GetMask("TP");
+            rightLineVisual.invalidColorGradient = TP_InvalidColorGradient;
+            toggleRayRight = false;
+        }
 
 
         if (lHand.IsSelecting(toyBombTower) || lHand.IsSelecting(toyArrowTower))
@@ -60,16 +79,23 @@ public class ToyGrab : MonoBehaviour
 
             }
 
-            leftRayScript.directInteractor = lHand;
+            //leftRayScript.directInteractor = lHand;
+            rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("Node");
             leftRayScript.ActivateRay();
+            toggleRayLeft = true;
 
         }
-        else if (!lHand.isSelectActive)
+        else if (!lHand.isSelectActive && toggleRayLeft)
+        {
             leftRayScript.DeactivateRay();
+            rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("TP");
+            leftLineVisual.invalidColorGradient = TP_InvalidColorGradient;
+            toggleRayLeft = false;
+        }
 
     }
 
-    //-------------------------------------------------------- RED GRADIENT (BOMB)
+    //-------------------------------------------------------- MAGENTA GRADIENT (BOMB)
     Gradient bomb_InvalidColorGradient = new Gradient
     {
         colorKeys = new[] { new GradientColorKey(Color.magenta, 0f), new GradientColorKey(Color.yellow, 1f) },
@@ -82,7 +108,20 @@ public class ToyGrab : MonoBehaviour
     }
     //--------------------------------------------------------
 
-    //-------------------------------------------------------- GREEN GRADIENT (ARROW)
+    //-------------------------------------------------------- RED GRADIENT (BOMB)
+    Gradient TP_InvalidColorGradient = new Gradient
+    {
+        colorKeys = new[] { new GradientColorKey(Color.red, 0f), new GradientColorKey(Color.red, 1f) },
+        alphaKeys = new[] { new GradientAlphaKey(1f, 0f), new GradientAlphaKey(1f, 1f) },
+    };
+    public Gradient TP_invalidColorGradient
+    {
+        get => TP_InvalidColorGradient;
+        set => TP_InvalidColorGradient = value;
+    }
+    //--------------------------------------------------------
+
+    //-------------------------------------------------------- BLUE GRADIENT (ARROW)
     Gradient arrow_InvalidColorGradient = new Gradient
     {
         colorKeys = new[] { new GradientColorKey(Color.blue, 0f), new GradientColorKey(Color.yellow, 1f) },

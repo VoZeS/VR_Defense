@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 839631441050479733}
   - component: {fileID: 839631441050479735}
-  - component: {fileID: 839631441050479734}
+  - component: {fileID: 4624550352617421709}
   m_Layer: 0
   m_Name: TP_Trigger
   m_TagString: Untagged
@@ -138,7 +138,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3041353, y: 0.22185898, z: 1.3438272}
   m_Center: {x: -0.24954557, y: 2.7994556, z: -0.12156725}
---- !u!114 &839631441050479734
+--- !u!114 &4624550352617421709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 839631441050479732}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e2f4617667341945b5a7756e14b62d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -156,7 +156,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 32
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+  m_TeleportAnchorTransform: {fileID: 839631441050479733}
 --- !u!1 &7013042130591077365
 GameObject:
   m_ObjectHideFlags: 0
