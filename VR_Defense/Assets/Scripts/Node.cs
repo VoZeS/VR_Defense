@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Node : MonoBehaviour
 {
-    public Color hoverColor;
+    //public Color hoverColor;
     public Color noBuildColor;
     public Vector3 positionOffset;
 
@@ -40,11 +40,11 @@ public class Node : MonoBehaviour
             noBuildMode();
         }
 
-        if (WaveSpawner.enemyalive <= 0)
-        {
+        //if (WaveSpawner.enemyalive <= 0)
+        //{
           
-            HoverExit();
-        }
+        //    HoverExit();
+        //}
 
     }
 
@@ -90,18 +90,5 @@ public class Node : MonoBehaviour
         rend.material.color = noBuildColor;
      
     }
-     
-
-    public void HoverEnter()
-    {
-        rend.material.color = hoverColor; //Cambia el color del tile si pasas el raton por encima
-    }
-
-
-    public void HoverExit()
-    {
-      
-        rend.material.color = starColor;
-        
-    }
+    
 }
