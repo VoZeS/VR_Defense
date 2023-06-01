@@ -18,13 +18,16 @@ public class WaveSpawner : MonoBehaviour
 
     public static  bool endOrd = true;
 
-   
+
+    public GameObject floor;
+
 
     void Update()
     {
         if (enemyalive <= 0)
         {
             endOrd = true;
+          
         }
  
         if (ChangeMode.buildMode == false && endOrd)
@@ -33,6 +36,15 @@ public class WaveSpawner : MonoBehaviour
             endOrd = false;
         }
 
+        if (endOrd == true)
+        {
+            floor.transform.position = new Vector3(38, 15, 38);
+        }
+
+        if (endOrd == false)
+        {
+            floor.transform.position = new Vector3(38, 15.5f, 38);
+        }
         
 
     }
