@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 4797812272251637675}
   - component: {fileID: -6766684868836580126}
   - component: {fileID: -4631802936425753064}
+  - component: {fileID: 6923433355831778544}
   m_Layer: 8
   m_Name: Arrow
   m_TagString: Arrow
@@ -294,6 +295,20 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &6923433355831778544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485033661919127732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9d8ecfd8d94ab419eda2e0ba324799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50
+  impactEffect: {fileID: 1982550563121423339, guid: d10c69b20269fa04c92d3d154fe00076, type: 3}
 --- !u!1 &1606972069694784870
 GameObject:
   m_ObjectHideFlags: 0

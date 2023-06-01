@@ -1920,6 +1920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Interaction Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3275125608477820235, guid: f3223be25b3b7994e9fa3e260cad6b99, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3275125608477820237, guid: f3223be25b3b7994e9fa3e260cad6b99, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -7280,7 +7284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &1248616249
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12580,6 +12584,10 @@ PrefabInstance:
     - target: {fileID: 3558631295251565681, guid: dc924e3d758be5c4a9a5cb39d7bb95bc, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3558631295251565681, guid: dc924e3d758be5c4a9a5cb39d7bb95bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3558631295251565682, guid: dc924e3d758be5c4a9a5cb39d7bb95bc, type: 3}
       propertyPath: m_RootOrder
