@@ -12211,14 +12211,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3682996613437915734, guid: 6146681581eaf64449a0591d395da2b7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8f48b3b88a834f44c9dd25a366d8379b, type: 2}
-    - target: {fileID: 3682996614058179608, guid: 6146681581eaf64449a0591d395da2b7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8df89359ff6106e44ae66e42f681dbb2, type: 2}
     - target: {fileID: 3682996614167997830, guid: 6146681581eaf64449a0591d395da2b7, type: 3}
       propertyPath: m_Name
       value: Bird
@@ -12267,17 +12259,68 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3682996614997239688, guid: 6146681581eaf64449a0591d395da2b7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8df89359ff6106e44ae66e42f681dbb2, type: 2}
-    - target: {fileID: 3682996615094343208, guid: 6146681581eaf64449a0591d395da2b7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8df89359ff6106e44ae66e42f681dbb2, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 6146681581eaf64449a0591d395da2b7, type: 3}
+--- !u!1001 &3942249519926135515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.3812
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 32.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 53.52156
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9969517
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0780211
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 8.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643305, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 407873618040643317, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
+      propertyPath: m_Name
+      value: Bird (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c1722866a6d4aa439e89a43dab96779, type: 3}
 --- !u!1001 &6381582656079081331
 PrefabInstance:
   m_ObjectHideFlags: 0
