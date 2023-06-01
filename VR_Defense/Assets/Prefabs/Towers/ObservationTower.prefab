@@ -1012,7 +1012,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 730.8112, y: -3062.9592}
-  m_SizeDelta: {x: 1103, y: 517}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &88576086960924385
 Canvas:
@@ -1593,6 +1593,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1778498386552017305}
     m_Modifications:
+    - target: {fileID: 3224351467420600925, guid: a83994c026e66374e88d54138f1b1ad0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3224351467420600925, guid: a83994c026e66374e88d54138f1b1ad0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6010934745076274758, guid: a83994c026e66374e88d54138f1b1ad0, type: 3}
       propertyPath: m_Name
       value: ToyTowerArrow
@@ -1711,6 +1719,14 @@ PrefabInstance:
     - target: {fileID: 957375145923274772, guid: 7461ee8511d3a824bad37e7a8e5c3411, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528302750089510549, guid: 7461ee8511d3a824bad37e7a8e5c3411, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528302750089510549, guid: 7461ee8511d3a824bad37e7a8e5c3411, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2558720675028520259, guid: 7461ee8511d3a824bad37e7a8e5c3411, type: 3}
       propertyPath: m_Name
