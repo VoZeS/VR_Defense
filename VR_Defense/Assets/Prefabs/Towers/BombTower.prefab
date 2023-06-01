@@ -218,7 +218,7 @@ MonoBehaviour:
       m_Calls: []
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
-  m_TeleportTrigger: 0
+  m_TeleportTrigger: 2
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
@@ -261,7 +261,7 @@ Transform:
   - {fileID: 1869681099610484661}
   - {fileID: 1869681099139621236}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &642109334626805358
 MeshFilter:

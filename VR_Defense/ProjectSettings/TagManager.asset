@@ -9,6 +9,9 @@ TagManager:
   - Floor
   - Crossbow
   - Bomb
+  - Scripter
+  - ToyArrowTower
+  - ToyBombTower
   layers:
   - Default
   - TransparentFX
@@ -21,7 +24,7 @@ TagManager:
   - Arrow
   - ToyTowerBomb
   - ToyTowerArrow
-  - 
+  - Node
   - 
   - 
   - 
