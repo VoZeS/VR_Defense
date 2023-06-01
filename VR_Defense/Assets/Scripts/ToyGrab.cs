@@ -26,10 +26,10 @@ public class ToyGrab : MonoBehaviour
     private bool toggleRayLeft = false;
     private bool toggleRayRight = false;
 
-    private bool hasBombTower_Right = false;
-    private bool hasArrowTower_Right = false;
-    private bool hasBombTower_Left = false;
-    private bool hasArrowTower_Left = false;
+    public bool hasBombTower_Right = false;
+    public bool hasArrowTower_Right = false;
+    public bool hasBombTower_Left = false;
+    public bool hasArrowTower_Left = false;
 
     // Start is called before the first frame update
     void Start()

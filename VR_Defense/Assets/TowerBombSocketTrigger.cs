@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TowerBombSocketTrigger : MonoBehaviour
 {
-    public bool isInsideBombSocket = false;
+    public static bool isInsideBombSocket = false;
 
     private void OnCollisionEnter(Collision collision)
     {
