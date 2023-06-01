@@ -6,6 +6,7 @@ public class ChangeMode : MonoBehaviour
 {
     public bool orda = false;
     public bool build = true;
+  
 
     public static bool buildMode = true;
 
@@ -26,12 +27,14 @@ public class ChangeMode : MonoBehaviour
         {
             orda = false;
             build = true;
+           
         }
 
         if (buildMode == false)
         {
             orda = true;
             build = false;
+    
         }
 
 
@@ -43,6 +46,7 @@ public class ChangeMode : MonoBehaviour
     public void BuildingMode()
     {
         buildMode = false;
+       
     }
 
    
