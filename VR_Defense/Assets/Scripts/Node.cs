@@ -9,6 +9,9 @@ public class Node : MonoBehaviour
 
     private GameObject turret;
 
+    public static int arrowTowerPrice = 200;
+    public static int bombTowerPrice = 400;
+
 
     private Renderer rend;
     private Color starColor;
@@ -58,18 +61,18 @@ public class Node : MonoBehaviour
 
         if (WaveSpawner.enemyalive<=0)
         {
-            if (torretType == false && PlayerStats.Money >= 200) //Construye torreta de flechas
+            if (torretType == false && PlayerStats.Money >= arrowTowerPrice) //Construye torreta de flechas
             {
                 GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-                PlayerStats.Money -= 200;
+                PlayerStats.Money -= arrowTowerPrice;
             }
 
-            if (torretType == true && PlayerStats.Money >= 400) //Construye torreta de bombas
+            if (torretType == true && PlayerStats.Money >= bombTowerPrice) //Construye torreta de bombas
             {
                 GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-                PlayerStats.Money -= 400;
+                PlayerStats.Money -= bombTowerPrice;
             }
         }
        

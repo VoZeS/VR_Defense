@@ -12,6 +12,7 @@ TagManager:
   - Scripter
   - ToyArrowTower
   - ToyBombTower
+  - Rope
   layers:
   - Default
   - TransparentFX
