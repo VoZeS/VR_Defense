@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 7131043553777014802}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4455203929025178520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123248559383254954}
+  m_Layer: 0
+  m_Name: TP_Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &123248559383254954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4455203929025178520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7131043553777014802}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7131043553776571526
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +406,7 @@ GameObject:
   - component: {fileID: 7131043553777014802}
   - component: {fileID: 3005834068029523938}
   - component: {fileID: 8598245166681459340}
-  - component: {fileID: 8598245166681459341}
+  - component: {fileID: 1407833559427055251}
   m_Layer: 0
   m_Name: CrossbowTower
   m_TagString: Untagged
@@ -398,6 +429,7 @@ Transform:
   - {fileID: 7131043553777003878}
   - {fileID: 7131043553776908284}
   - {fileID: 7981945277664347950}
+  - {fileID: 123248559383254954}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -432,7 +464,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6934118, y: 0.12791061, z: 2.8961017}
   m_Center: {x: 0.03494203, y: 8.912676, z: 0.0034193993}
---- !u!114 &8598245166681459341
+--- !u!114 &1407833559427055251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,7 +473,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7131043553776660372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e2f4617667341945b5a7756e14b62d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
@@ -450,7 +482,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 32
   m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -516,6 +548,7 @@ MonoBehaviour:
   m_Teleporting:
     m_PersistentCalls:
       m_Calls: []
+  m_TeleportAnchorTransform: {fileID: 123248559383254954}
 --- !u!1 &7131043553776662142
 GameObject:
   m_ObjectHideFlags: 0
