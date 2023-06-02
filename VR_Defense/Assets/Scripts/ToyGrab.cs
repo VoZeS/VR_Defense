@@ -11,17 +11,14 @@ public class ToyGrab : MonoBehaviour
     public XRRayInteractor rayRightHand;
     public XRRayInteractor rayLeftHand;
 
-    public XRGrabInteractable toyBombTower;
-    public XRGrabInteractable toyArrowTower;
+    public XRGrabInteractable[] toyBombTower;
+    public XRGrabInteractable[] toyArrowTower;
 
     public ToggleRay rightRayScript;
     public ToggleRay leftRayScript;
 
     public XRInteractorLineVisual rightLineVisual;
     public XRInteractorLineVisual leftLineVisual;
-
-    public XRSocketInteractor socketTower1;
-    public XRSocketInteractor socketTower2;
 
     private bool toggleRayLeft = false;
     private bool toggleRayRight = false;
@@ -34,105 +31,108 @@ public class ToyGrab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        toyBombTower = GameObject.FindGameObjectWithTag("ToyBombTower").GetComponent<XRGrabInteractable>();
-        toyArrowTower = GameObject.FindGameObjectWithTag("ToyArrowTower").GetComponent<XRGrabInteractable>();
-
         toggleRayLeft = false;
         toggleRayRight = false;
     }
 
     void Update()
     {
-
-        if (rHand.IsSelecting(toyBombTower) || rHand.IsSelecting(toyArrowTower))
+        for(int i = 0; i < toyBombTower.Length; i++)
         {
-            if (rHand.IsSelecting(toyBombTower))
+            // Right Hand
+            if (rHand.IsSelecting(toyBombTower[i]) || rHand.IsSelecting(toyArrowTower[i]))
             {
-                rightLineVisual.invalidColorGradient = bomb_InvalidColorGradient;
-                rayRightHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerBomb");
-                hasBombTower_Right = true;
+                if (rHand.IsSelecting(toyBombTower[i]))
+                {
+                    rightLineVisual.invalidColorGradient = bomb_InvalidColorGradient;
+                    rayRightHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerBomb");
+                    hasBombTower_Right = true;
+                    hasArrowTower_Right = false;
+                }
+                else if (rHand.IsSelecting(toyArrowTower[i]))
+                {
+                    rightLineVisual.invalidColorGradient = arrow_InvalidColorGradient;
+                    rayRightHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerArrow");
+                    hasBombTower_Right = false;
+                    hasArrowTower_Right = true;
+                }
+
+                //rightRayScript.directInteractor = rHand;
+                rightRayScript.ActivateRay();
+                toggleRayRight = true;
+
+            }
+            else if (!rHand.isSelectActive && toggleRayRight)
+            {
+                rightRayScript.DeactivateRay();
+                rayRightHand.interactionLayers = InteractionLayerMask.GetMask("TP");
+                rightLineVisual.invalidColorGradient = TP_InvalidColorGradient;
+                toggleRayRight = false;
+                hasBombTower_Right = false;
                 hasArrowTower_Right = false;
             }
-            else if (rHand.IsSelecting(toyArrowTower))
+            else if (hasBombTower_Right)
             {
-                rightLineVisual.invalidColorGradient = arrow_InvalidColorGradient;
-                rayRightHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerArrow");
-                hasBombTower_Right = false;
-                hasArrowTower_Right = true;
+
+                toyBombTower[i].gameObject.transform.position = rayRightHand.transform.position;
+                toyBombTower[i].gameObject.transform.rotation = rayRightHand.transform.rotation;
+
+            }
+            else if (hasArrowTower_Right)
+            {
+                toyArrowTower[i].gameObject.transform.position = rayRightHand.transform.position;
+                toyArrowTower[i].gameObject.transform.rotation = rayRightHand.transform.rotation;
+
             }
 
-            //rightRayScript.directInteractor = rHand;
-            rightRayScript.ActivateRay();
-            toggleRayRight = true;
-
-        }
-        else if (!rHand.isSelectActive && toggleRayRight)
-        {
-            rightRayScript.DeactivateRay();
-            rayRightHand.interactionLayers = InteractionLayerMask.GetMask("TP");
-            rightLineVisual.invalidColorGradient = TP_InvalidColorGradient;
-            toggleRayRight = false;
-            hasBombTower_Right = false;
-            hasArrowTower_Right = false;
-        }
-        else if (hasBombTower_Right)
-        {
-            toyBombTower.gameObject.transform.position = rayRightHand.transform.position;
-            toyBombTower.gameObject.transform.rotation = rayRightHand.transform.rotation;
-
-        }   
-        else if (hasArrowTower_Right)
-        {
-            toyArrowTower.gameObject.transform.position = rayRightHand.transform.position;
-            toyArrowTower.gameObject.transform.rotation = rayRightHand.transform.rotation;
-
-        }
-
-        if (lHand.IsSelecting(toyBombTower) || lHand.IsSelecting(toyArrowTower))
-        {
-            if (lHand.IsSelecting(toyBombTower))
+            // Left Hand
+            if (lHand.IsSelecting(toyBombTower[i]) || lHand.IsSelecting(toyArrowTower[i]))
             {
-                leftLineVisual.invalidColorGradient = bomb_InvalidColorGradient;
-                rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerBomb");
-                hasBombTower_Left = true;
+                if (lHand.IsSelecting(toyBombTower[i]))
+                {
+                    leftLineVisual.invalidColorGradient = bomb_InvalidColorGradient;
+                    rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerBomb");
+                    hasBombTower_Left = true;
+                    hasArrowTower_Left = false;
+                }
+                else if (lHand.IsSelecting(toyArrowTower[i]))
+                {
+                    leftLineVisual.invalidColorGradient = arrow_InvalidColorGradient;
+                    rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerArrow");
+                    hasBombTower_Left = false;
+                    hasArrowTower_Left = true;
+                }
+
+                //leftRayScript.directInteractor = lHand;
+                leftRayScript.ActivateRay();
+                toggleRayLeft = true;
+
+            }
+            else if (!lHand.isSelectActive && toggleRayLeft)
+            {
+                leftRayScript.DeactivateRay();
+                rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("TP");
+                leftLineVisual.invalidColorGradient = TP_InvalidColorGradient;
+                toggleRayLeft = false;
+                hasBombTower_Left = false;
                 hasArrowTower_Left = false;
             }
-            else if (lHand.IsSelecting(toyArrowTower))
+            else if (hasBombTower_Left)
             {
-                leftLineVisual.invalidColorGradient = arrow_InvalidColorGradient;
-                rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("ToyTowerArrow");
-                hasBombTower_Left = false;
-                hasArrowTower_Left = true;
+                toyBombTower[i].gameObject.transform.position = rayLeftHand.transform.position;
+                toyBombTower[i].gameObject.transform.rotation = rayLeftHand.transform.rotation;
+
             }
+            else if (hasArrowTower_Left)
+            {
+                toyArrowTower[i].gameObject.transform.position = rayLeftHand.transform.position;
+                toyArrowTower[i].gameObject.transform.rotation = rayLeftHand.transform.rotation;
 
-            //leftRayScript.directInteractor = lHand;
-            leftRayScript.ActivateRay();
-            toggleRayLeft = true;
-
+            }
         }
-        else if (!lHand.isSelectActive && toggleRayLeft)
-        {
-            leftRayScript.DeactivateRay();
-            rayLeftHand.interactionLayers = InteractionLayerMask.GetMask("TP");
-            leftLineVisual.invalidColorGradient = TP_InvalidColorGradient;
-            toggleRayLeft = false;
-            hasBombTower_Left = false;
-            hasArrowTower_Left = false;
-        }
-        else if (hasBombTower_Left)
-        {
-            toyBombTower.gameObject.transform.position = rayLeftHand.transform.position;
-            toyBombTower.gameObject.transform.rotation = rayLeftHand.transform.rotation;
-
-        }
-        else if (hasArrowTower_Left)
-        {
-            toyArrowTower.gameObject.transform.position = rayLeftHand.transform.position;
-            toyArrowTower.gameObject.transform.rotation = rayLeftHand.transform.rotation;
-
-        }
-
     }
+        
+
 
     //-------------------------------------------------------- MAGENTA GRADIENT (BOMB)
     Gradient bomb_InvalidColorGradient = new Gradient

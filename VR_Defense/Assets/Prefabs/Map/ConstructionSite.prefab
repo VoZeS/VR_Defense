@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1604235120370612315}
   - component: {fileID: 1604235120370612312}
   - component: {fileID: 8632168320042262808}
-  m_Layer: 11
+  m_Layer: 7
   m_Name: ConstructionSite
   m_TagString: Floor
   m_Icon: {fileID: 0}

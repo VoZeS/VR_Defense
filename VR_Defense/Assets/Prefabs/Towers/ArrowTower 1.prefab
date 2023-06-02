@@ -1544,8 +1544,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8435987919651079846}
   - component: {fileID: 4490922453628295510}
-  - component: {fileID: 6969094378408727608}
   - component: {fileID: 319061972571660327}
+  - component: {fileID: 765858022833902343}
   m_Layer: 0
   m_Name: CrossbowTower
   m_TagString: Untagged
@@ -1590,19 +1590,6 @@ MonoBehaviour:
   enemyTag: Enemy
   bulletPrefab: {fileID: 4777493609547225082, guid: 590e4a97bea75e841960f4c93d4aa4d1, type: 3}
   firePoint: {fileID: 8728460915885185434}
---- !u!65 &6969094378408727608
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8435987919651451168}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.6934118, y: 0.12791061, z: 2.8961017}
-  m_Center: {x: 0.03494203, y: 8.912676, z: 0.0034193993}
 --- !u!114 &319061972571660327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,6 +1675,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_TeleportAnchorTransform: {fileID: 1608336939497539870}
+--- !u!64 &765858022833902343
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8435987919651451168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8435987919651457324
 GameObject:
   m_ObjectHideFlags: 0
