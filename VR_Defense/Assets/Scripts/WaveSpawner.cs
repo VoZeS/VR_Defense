@@ -15,11 +15,10 @@ public class WaveSpawner : MonoBehaviour
 
     public static int enemyalive;
 
-
     public static  bool endOrd = true;
 
-
     public GameObject floor;
+
 
     private void Start()
     {
@@ -29,15 +28,16 @@ public class WaveSpawner : MonoBehaviour
 
     void Update()
     {
+
         if (enemyalive <= 0)
         {
             endOrd = true;
-          
         }
  
         if (ChangeMode.buildMode == false && endOrd)
         {
                 StartCoroutine (SpawnWave());
+
             endOrd = false;
         }
 
@@ -50,8 +50,6 @@ public class WaveSpawner : MonoBehaviour
         {
             floor.transform.position = new Vector3(38, 15.5f, 38);
         }
-        
-
     }
 
     IEnumerator SpawnWave()

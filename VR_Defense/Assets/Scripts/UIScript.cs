@@ -9,14 +9,14 @@ public class UIScript : MonoBehaviour
 
     public TextMeshProUGUI livesUI;
     public GameObject button;
-    
+
+    public AudioSource looseSource;
+    public AudioClip audioClip;
+
     void Start()
     {
         button.SetActive(false);
     }
-
-
-
 
     void Update()
     {
@@ -27,6 +27,8 @@ public class UIScript : MonoBehaviour
         }
         else
         {
+            if(!looseSource.isPlaying)
+                looseSource.PlayOneShot(audioClip);
             livesUI.text = "You Lose";
             button.SetActive(true);
         }

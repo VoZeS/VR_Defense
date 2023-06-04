@@ -11,6 +11,7 @@ public class EnemyStats : MonoBehaviour
 
     public Slider healthBar;
 
+    public AudioSource audioSource;
 
     private void Update()
     {
@@ -18,6 +19,8 @@ public class EnemyStats : MonoBehaviour
     }
     public void TakeDamage(float amount)
     {
+        audioSource.Play();
+
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
         health -= amount;

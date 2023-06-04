@@ -10,6 +10,12 @@ public class Explosion_Player : MonoBehaviour
 
     public GameObject impactEffect;
 
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GameObject.FindGameObjectWithTag("AudioExplosion").GetComponent<AudioSource>();
+    }
     public void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Enemy")
@@ -33,6 +39,7 @@ public class Explosion_Player : MonoBehaviour
 
     void Explode()
     {
+        audioSource.Play();
         GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 2f);
         Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
