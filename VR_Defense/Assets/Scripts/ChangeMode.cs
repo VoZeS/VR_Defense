@@ -10,6 +10,11 @@ public class ChangeMode : MonoBehaviour
 
     public static bool buildMode = true;
 
+    private void Start()
+    {
+        buildMode = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
