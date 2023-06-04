@@ -7,16 +7,16 @@ public class KillDuck : MonoBehaviour
 
     private void Start()
     {
-<<<<<<< Updated upstream
+
         gameObject.GetComponent<Rigidbody>().useGravity = false;
         gameObject.GetComponent<Animator>().enabled = true;
-=======
+
         //if (ChangeMode.buildMode == true)
         //{
         //    gameObject.GetComponent<Rigidbody>().useGravity = false;
         //    gameObject.GetComponent<Animator>().enabled = true;
         //}
->>>>>>> Stashed changes
+
     }
 
 
