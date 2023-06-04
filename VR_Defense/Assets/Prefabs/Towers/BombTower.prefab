@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 15
+  range: 5
   fireRate: 1
   enemyTag: Enemy
   bulletPrefab: {fileID: 4777493609547225082, guid: 34842ce521c57004285e59089345fa01, type: 3}

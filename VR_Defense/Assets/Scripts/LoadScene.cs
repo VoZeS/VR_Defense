@@ -6,8 +6,12 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     
-    public string SceneName = "";
+    public string SceneName = "Level_1";
 
+    private void Start()
+    {
+        SceneName = "Level_1";
+    }
     // Update is called once per frame
     public void LoadTargetScene()
     {
