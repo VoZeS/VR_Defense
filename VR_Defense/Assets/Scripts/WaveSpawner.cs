@@ -11,9 +11,9 @@ public class WaveSpawner : MonoBehaviour
     public float timeBetweenWaves = 2f;
     //private float countdown = 2f;
 
-    public int waveIndex = 0;
+    public int waveIndex;
 
-    public static int enemyalive = 0;
+    public static int enemyalive;
 
 
     public static  bool endOrd = true;
@@ -21,6 +21,11 @@ public class WaveSpawner : MonoBehaviour
 
     public GameObject floor;
 
+    private void Start()
+    {
+        waveIndex = 0;
+        enemyalive = 0;
+    }
 
     void Update()
     {

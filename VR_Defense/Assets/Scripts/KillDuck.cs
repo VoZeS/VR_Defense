@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class KillDuck : MonoBehaviour
 {
-    private void Update()
+
+    private void Start()
     {
-        if (ChangeMode.buildMode == true)
-        {
-            gameObject.GetComponent<Rigidbody>().useGravity = false;
-            gameObject.GetComponent<Animator>().enabled = true;
-        }
+        gameObject.GetComponent<Rigidbody>().useGravity = false;
+        gameObject.GetComponent<Animator>().enabled = true;
     }
+
 
     private void OnCollisionEnter(Collision collision)
     {

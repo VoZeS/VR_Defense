@@ -11,6 +11,7 @@ public class EnemyStats : MonoBehaviour
 
     public Slider healthBar;
 
+
     private void Update()
     {
         healthBar.value = health;
