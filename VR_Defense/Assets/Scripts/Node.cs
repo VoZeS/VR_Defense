@@ -61,18 +61,18 @@ public class Node : MonoBehaviour
 
         if (WaveSpawner.enemyalive<=0)
         {
-            if (torretType == false && PlayerStats.Money >= arrowTowerPrice) //Construye torreta de flechas
-            {
-                GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
-                turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-                PlayerStats.Money -= arrowTowerPrice;
-            }
-
-            if (torretType == true && PlayerStats.Money >= bombTowerPrice) //Construye torreta de bombas
+            if (torretType == false && PlayerStats.Money >= bombTowerPrice) //Construye torreta de flechas
             {
                 GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
                 turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
                 PlayerStats.Money -= bombTowerPrice;
+            }
+
+            if (torretType == true && PlayerStats.Money >= arrowTowerPrice) //Construye torreta de bombas
+            {
+                GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+                turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
+                PlayerStats.Money -= arrowTowerPrice;
             }
         }
        
