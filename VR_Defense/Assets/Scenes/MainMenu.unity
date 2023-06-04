@@ -5481,10 +5481,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1593591272}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1445809600}
+        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5540,7 +5540,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1445809595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f8db9e4177393b469da69d88b2d2e92, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cabf83e2c51dbb488ea93919b32ecce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1473199927
