@@ -6,8 +6,6 @@ using TMPro;
 public class UITowers : MonoBehaviour
 {
 
-
-
     public TextMeshProUGUI arrowPriceUI;
     public TextMeshProUGUI bombPriceUI;
 

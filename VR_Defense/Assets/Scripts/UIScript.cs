@@ -13,9 +13,13 @@ public class UIScript : MonoBehaviour
     public AudioSource looseSource;
     public AudioClip audioClip;
 
+    private int numberOfTimesPlayed = 0;
+
     void Start()
     {
         button.SetActive(false);
+
+        numberOfTimesPlayed = 0;
     }
 
     void Update()
@@ -27,8 +31,13 @@ public class UIScript : MonoBehaviour
         }
         else
         {
-            if(!looseSource.isPlaying)
+            if(!looseSource.isPlaying && numberOfTimesPlayed == 0)
+            {
                 looseSource.PlayOneShot(audioClip);
+                numberOfTimesPlayed++;
+
+            }
+
             livesUI.text = "You Lose";
             button.SetActive(true);
         }
