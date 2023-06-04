@@ -4,15 +4,15 @@ VR Defense es un prototio de videojuego de realidad virtual elaborado por unos e
 ## Controles
 ![](https://www.vrteamspace.co.uk/wp-content/uploads/Oculus-touch-controllers-1.png)
 
-Thumbstick derecho: Rotar vista
+* Thumbstick derecho: Rotar vista
 
-Thumbstick izquierdo: Movimiento continuo
+* Thumbstick izquierdo: Movimiento continuo
 
-B e Y: raycast para intereactuar
+* B e Y: raycast para intereactuar
 
-Grip: agarrar objetos
+* Grip: agarrar objetos
 
-Trigger: construcción, teletransporte y disparar
+* Trigger: construcción, teletransporte y disparar
 
 
 ## Miembros
