@@ -1,5 +1,5 @@
 # VR_Defense
-VR Defense es un prototio de videojuego de realidad virtual elaborado por unos estudiantes del CITM como proyecto final para una asignatura.
+VR Defense es un prototio de videojuego de realidad virtual elaborado por unos estudiantes del CITM como proyecto final para una asignatura. Para ello se han usado las Oculus Quest 2.
 
 ## Controles
 ![](https://www.vrteamspace.co.uk/wp-content/uploads/Oculus-touch-controllers-1.png)
